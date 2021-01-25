@@ -7,6 +7,7 @@ function toggleButton() {
 
 function tellMe(joke) {
   VoiceRSS.speech({
+    // TODO Hide key in a server (free API so it's ok for now...)
     key: "077b717b8d884e8dacbf04476927eea3",
     src: joke,
     hl: "en-us",
