@@ -1,5 +1,6 @@
 const button = document.getElementById("button");
 const audioElement = document.getElementById("audio");
+const loader = document.getElementById("loader");
 
 function toggleButton() {
   button.disabled = !button.disabled;
@@ -20,6 +21,7 @@ function tellMe(joke) {
 }
 
 async function getJoke() {
+  loader.hidden = false;
   toggleButton();
   let joke = "";
   const apiUrl =
